@@ -1,1 +1,3 @@
-# Platforma
+#Platforma
+
+trello.com conect
