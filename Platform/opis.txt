@@ -1,0 +1,15 @@
+Zarys projektu applikacji w języku c++ 
+Aplikacja/Gra jest napisana za pomocą biblioteki SFML-2.3.2
+Gra platformowa 2D. Kategorie: logiczna, przygodowa, sandbox.
+Autor projektu: @Mielniu
+Data rozpoczęcia projektu: 16.08.2016
+Data zakończenia projektu: ~
+Nazwa gry: ~
+
+#Zarys
+Początkowy zarys:
+Aplikacja okienkowa możliwość pełnego ekranu.
+Kontrolujesz bohatera po przez klawiaturę oraz myszkę.
+Fabuła jest podzielona na kilka Epizotów.
+Celem gry jest dojście do wyznaczonego celu.
+Udanej rozgrywki!
