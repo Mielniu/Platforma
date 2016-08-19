@@ -2,6 +2,7 @@
 
 #include <SFML\Graphics.hpp>
 
+
 class General
 {
 public:
@@ -9,6 +10,7 @@ public:
 	~General();
 
 	void run();
+	void draw();
 
 private:
 	sf::RenderWindow windows;

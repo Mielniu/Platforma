@@ -1,10 +1,15 @@
 #include "General.h"
+#include "LoadTextur.h"
+
 #include <iostream>
+
+Texture www;
 
 General::General()
 {
 	windows.create(sf::VideoMode(static_cast<int> (windowsWidth), static_cast<int>(windowsHeight)), windowsName, sf::Style::Close);
 	windows.setVerticalSyncEnabled(true);
+	www.load();
 }
 
 General::~General()
@@ -29,6 +34,18 @@ void General::run()
 				break;
 			}
 		}
-		std::cout << "test" << std::endl;
+		draw();
+		//std::cout << "test" << std::endl;
 	}
+}
+
+void General::draw()
+{
+	windows.clear();
+	windows.draw(www.id[0]);
+	windows.draw(www.id[1]);
+	windows.draw(www.id[2]);
+	windows.draw(www.id[3]);
+	windows.draw(www.catcat);
+	windows.display();
 }
