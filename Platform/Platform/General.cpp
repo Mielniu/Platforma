@@ -1,15 +1,13 @@
 #include "General.h"
-#include "LoadTextur.h"
 
 #include <iostream>
 
-Texture www;
 
 General::General()
 {
 	windows.create(sf::VideoMode(static_cast<int> (windowsWidth), static_cast<int>(windowsHeight)), windowsName, sf::Style::Close);
 	windows.setVerticalSyncEnabled(true);
-	www.load();
+
 }
 
 General::~General()
@@ -18,6 +16,8 @@ General::~General()
 
 void General::run()
 {
+	startmap();
+
 	while (windows.isOpen())
 	{
 		while (windows.pollEvent(event))
@@ -42,10 +42,24 @@ void General::run()
 void General::draw()
 {
 	windows.clear();
-	windows.draw(www.id[0]);
-	windows.draw(www.id[1]);
-	windows.draw(www.id[2]);
-	windows.draw(www.id[3]);
-	windows.draw(www.catcat);
+	windows.draw(map);
 	windows.display();
+}
+
+void General::startmap()
+{
+	const int level[] =
+	{
+		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+		2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+	};
+
+	if (!map.load("Texture\\Textur.png", sf::Vector2u(40, 40), level, 16, 8))
+		windows.close();
 }

@@ -21,9 +21,6 @@
     <ClCompile Include="General.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="LoadTextur.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="Draw.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
@@ -32,10 +29,7 @@
     <ClInclude Include="General.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="LoadTextur.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Draw.h">
+    <ClInclude Include="LoadMap.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>

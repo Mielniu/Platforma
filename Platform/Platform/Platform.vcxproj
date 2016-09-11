@@ -128,13 +128,11 @@
   <ItemGroup>
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="General.cpp" />
-    <ClCompile Include="LoadTextur.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Draw.h" />
+    <ClInclude Include="LoadMap.h" />
     <ClInclude Include="General.h" />
-    <ClInclude Include="LoadTextur.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

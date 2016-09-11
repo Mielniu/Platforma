@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML\Graphics.hpp>
+#include "LoadMap.h"
 
 
 class General
@@ -11,6 +12,9 @@ public:
 
 	void run();
 	void draw();
+	void startmap();
+
+	LoadMap map;
 
 private:
 	sf::RenderWindow windows;
