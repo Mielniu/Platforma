@@ -127,8 +127,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="Fizyka.cpp" />
     <ClCompile Include="General.cpp" />
+    <ClCompile Include="Kolizje.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Rych.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LoadMap.h" />
